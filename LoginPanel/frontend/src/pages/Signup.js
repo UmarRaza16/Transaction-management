@@ -27,7 +27,7 @@ function Signup() {
             return handleError('name, email and password are required')
         }
         try {
-            const url =  "http://localhost:8080/auth/signup";
+            const url =  `https://transaction-management-sigma.vercel.app/auth/signup";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -97,5 +97,6 @@ function Signup() {
         </div>
     )
 }
+
 
 export default Signup
