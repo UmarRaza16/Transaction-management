@@ -12,4 +12,5 @@ export const handleError = (msg) => {
     })
 }
 
-export const APIUrl = process.env.REACT_APP_URL || 'http://localhost:8080';
+
+export const APIUrl = https://transaction-management-sigma.vercel.app || 'http://localhost:8080';
