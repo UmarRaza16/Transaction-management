@@ -13,5 +13,6 @@ export const handleError = (msg) => {
 }
 
 
-export const APIUrl = https://transaction-management-sigma.vercel.app ;
+
+
 
