@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { APIUrl, handleError, handleSuccess } from '../utils';
+import {  handleError, handleSuccess } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import ExpenseTable from './ExpenseTable';
 import ExpenseDetails from './ExpenseDetails';
@@ -62,7 +62,7 @@ function Home() {
 
     const fetchExpenses = async () => {
         try {
-            const url = `${APIUrl}/expenses`;
+            const url = `https://transaction-management-sigma.vercel.app/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -86,7 +86,7 @@ function Home() {
 
     const addTransaction = async (data) => {
         try {
-            const url = `${APIUrl}/expenses`;
+            const url = `https://transaction-management-sigma.vercel.app/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token'),
@@ -165,5 +165,6 @@ function Home() {
 
 
 export default Home
+
 
 
