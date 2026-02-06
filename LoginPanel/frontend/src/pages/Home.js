@@ -38,7 +38,7 @@ function Home() {
 
     const deleteExpens = async (id) => {
         try {
-            const url = `${APIUrl}/expenses/${id}`;
+            const url = `https://transaction-management-sigma.vercel.app/expenses/${id}`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -114,7 +114,7 @@ function Home() {
         fetchExpenses()
     }, [])
     const handleDeleteExpense = async (expenseId) => {
-        try {const url = `${APIUrl}/${expenseId}`;
+        try {const url = `https://transaction-management-sigma.vercel.app/${expenseId}`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token'),
@@ -165,6 +165,7 @@ function Home() {
 
 
 export default Home
+
 
 
 
